@@ -68,8 +68,8 @@ public class Network implements Runnable {
 
         for (int i = 0; i < addresses.length; i++) {
             try {
-                //InetAddress inet = InetAddress.getByName(addresses[i]);
-                InetAddress inet = InetAddress.getByName("192.168.0.105");
+                InetAddress inet = InetAddress.getByName(addresses[i]);
+                //InetAddress inet = InetAddress.getByName("192.168.0.105");
 
                 socket = new Socket();
                 SocketAddress socketAddress = new InetSocketAddress(inet, 43567);
